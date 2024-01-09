@@ -3,12 +3,9 @@ from .models import Post, Comment, Like
 from .forms import CommentForm
 from django.contrib.auth.decorators import login_required
 
-# blog/views.py
-
-from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Comment, Like
-from .forms import CommentForm
-from django.contrib.auth.decorators import login_required
+def post_list(request):
+    posts = Post.objects.all()
+    return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
