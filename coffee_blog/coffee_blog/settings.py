@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+v=$n-bv6syolr&*0op!t8_@1^m@1bn$u^!ghr(#n7c8_a!im!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-dinakidane-coffeeblog-oceuray3t9a.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'coffee_blog'
 ]
 
 MIDDLEWARE = [
